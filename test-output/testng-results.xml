@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="18991" started-at="2018-09-11T20:53:16Z" finished-at="2018-09-11T20:53:35Z">
+    <groups>
+    </groups>
+    <test name="Coordinador" duration-ms="18991" started-at="2018-09-11T20:53:16Z" finished-at="2018-09-11T20:53:35Z">
+      <class name="ar.com.osde.som.test.Test_Coordinador">
+        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:ar.com.osde.som.test.Test_Coordinador@6a024a67]" name="startUp" is-config="true" duration-ms="10032" started-at="2018-09-11T17:53:16Z" finished-at="2018-09-11T17:53:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ntedesco@sms-latam.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SMOTEST1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="PASS" signature="CoordinadorGeneraInvitacion(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ar.com.osde.som.test.Test_Coordinador@6a024a67]" name="CoordinadorGeneraInvitacion" duration-ms="8935" started-at="2018-09-11T17:53:26Z" finished-at="2018-09-11T17:53:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[61271207809]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sanchez]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Marta]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[11-03-1992]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Tedesco Noelia]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[MP - Jujuy]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[AL20050010]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[ntedesco@sms-latam.com]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1130170508]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Clínica Adultos]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Pruebaa1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CoordinadorGeneraInvitacion -->
+      </class> <!-- ar.com.osde.som.test.Test_Coordinador -->
+    </test> <!-- Coordinador -->
+  </suite> <!-- Suite -->
+</testng-results>
