@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="lib" path="C:/selenium-server/selenium-server-standalone-3.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ntedesco/.m2/repository/com/beust/jcommander/1.48/jcommander-1.48.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ntedesco/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.0.1/selenium-chrome-driver-3.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ntedesco/.m2/repository/org/seleniumhq/selenium/selenium-java/3.0.1/selenium-java-3.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ntedesco/.m2/repository/org/seleniumhq/selenium/selenium-support/3.0.1/selenium-support-3.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ntedesco/.m2/repository/org/testng/testng/6.9.10/testng-6.9.10.jar"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,5 +1,6 @@
 package ar.com.osde.som.clases;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -70,6 +71,12 @@ public class Coordinador {
 	@FindBy (css = "i.fa.fa-2x.fa-trash")
 	private WebElement btnAnular;
 	
+	@FindBy (name = "detalleMotivo")
+	private WebElement campoMotivoAnular;
+	
+	@FindBy (xpath = ("//button[2]"))
+	private WebElement btnConfirmar;
+	
 	
 	private WebElement registroInvitacion;
 
@@ -137,19 +144,26 @@ public class Coordinador {
 		btnEnviar.click();
 	}
 	
-	public void SeleccionarInvitacion(String emailInvitacion) {
+	public boolean seleccionarInvitacion(String emailInvitacion) {
 	 try {
-		 registroInvitacion = driver.findEliment(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='"+emailInvitacion+"'])[1]/following::td[3]"))
-				 registroInvitacion.click();
+		 registroInvitacion = robot.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='"+emailInvitacion+"'])[1]/following::td[3]"));
+		 return true;
 	 }catch (Exception e) {
 		 System.out.println("El registro no se encuentra");
+		 return false;
 	 }
 		
 	}
 	
 	public void anularInvitacion(String emailInvitacion) {
-		seleccionarInvitacion(emailInvitacion);
-		btnAnular.click();
+		if (seleccionarInvitacion(emailInvitacion)) {
+			btnAnular.click();
+			campoMotivoAnular.sendKeys("Se anula invitación");
+			btnConfirmar.click();	
+		} else {
+			System.out.println("No fue posible anular la invitación");
+		}
+		
 			
 	}
 

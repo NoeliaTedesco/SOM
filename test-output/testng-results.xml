@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="18991" started-at="2018-09-11T20:53:16Z" finished-at="2018-09-11T20:53:35Z">
+  <suite name="Suite" duration-ms="61018" started-at="2018-09-12T23:27:20Z" finished-at="2018-09-12T23:28:21Z">
     <groups>
     </groups>
-    <test name="Coordinador" duration-ms="18991" started-at="2018-09-11T20:53:16Z" finished-at="2018-09-11T20:53:35Z">
+    <test name="Coordinador" duration-ms="61018" started-at="2018-09-12T23:27:20Z" finished-at="2018-09-12T23:28:21Z">
       <class name="ar.com.osde.som.test.Test_Coordinador">
-        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:ar.com.osde.som.test.Test_Coordinador@6a024a67]" name="startUp" is-config="true" duration-ms="10032" started-at="2018-09-11T17:53:16Z" finished-at="2018-09-11T17:53:26Z">
+        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:ar.com.osde.som.test.Test_Coordinador@57c758ac]" name="startUp" is-config="true" duration-ms="11073" started-at="2018-09-12T20:27:20Z" finished-at="2018-09-12T20:27:31Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[ntedesco@sms-latam.com]]>
+                <![CDATA[smotest1@smo.com]]>
               </value>
             </param>
             <param index="1">
@@ -23,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="CoordinadorGeneraInvitacion(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ar.com.osde.som.test.Test_Coordinador@6a024a67]" name="CoordinadorGeneraInvitacion" duration-ms="8935" started-at="2018-09-11T17:53:26Z" finished-at="2018-09-11T17:53:35Z">
+        <test-method status="PASS" signature="CoordinadorGeneraInvitacion(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ar.com.osde.som.test.Test_Coordinador@57c758ac]" name="CoordinadorGeneraInvitacion" duration-ms="48847" started-at="2018-09-12T20:27:31Z" finished-at="2018-09-12T20:28:20Z">
           <params>
             <param index="0">
               <value>
@@ -84,6 +84,10 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CoordinadorGeneraInvitacion -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:ar.com.osde.som.test.Test_Coordinador@57c758ac]" name="afterClass" is-config="true" duration-ms="1074" started-at="2018-09-12T20:28:20Z" finished-at="2018-09-12T20:28:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
       </class> <!-- ar.com.osde.som.test.Test_Coordinador -->
     </test> <!-- Coordinador -->
   </suite> <!-- Suite -->

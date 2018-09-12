@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 	<test name="Coordinador">
-		<parameter name="usser" value="ntedesco@sms-latam.com"></parameter>
+		<parameter name="usser" value="smotest1@smo.com"></parameter>
 		<parameter name="pass" value="SMOTEST1"></parameter>
 		<parameter name="nroSocio" value="61271207809"></parameter>
 		<parameter name="apellido" value="Sanchez"></parameter>

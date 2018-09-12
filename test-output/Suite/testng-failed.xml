@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <parameter name="NomSolicitante" value="Tedesco Noelia"/>
-  <parameter name="usser" value="ntedesco@sms-latam.com"/>
+  <parameter name="usser" value="smotest1@smo.com"/>
   <parameter name="pass" value="SMOTEST1"/>
   <parameter name="fechaNacimiento" value="11-03-1992"/>
   <parameter name="Detalle" value="Pruebaa1"/>
@@ -16,7 +16,7 @@
   <parameter name="email" value="ntedesco@sms-latam.com"/>
   <test name="Coordinador">
     <parameter name="NomSolicitante" value="Tedesco Noelia"/>
-    <parameter name="usser" value="ntedesco@sms-latam.com"/>
+    <parameter name="usser" value="smotest1@smo.com"/>
     <parameter name="pass" value="SMOTEST1"/>
     <parameter name="fechaNacimiento" value="11-03-1992"/>
     <parameter name="Detalle" value="Pruebaa1"/>

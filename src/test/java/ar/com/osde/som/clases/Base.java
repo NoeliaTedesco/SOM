@@ -1,14 +1,19 @@
 package ar.com.osde.som.clases;
 
+import java.awt.AWTException;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Base {
 
 	public WebDriver driver;
+	static WebDriverWait wait;
+
 
 	public Base() {
 		System.setProperty("webdriver.chrome.driver", "C:\\chromeDriver\\chromedriver.exe");
@@ -38,6 +43,16 @@ public class Base {
 	public void cerrarPagina(WebDriver driver) {
 		driver.close();
 		driver.quit();
+	}
+	
+	
+	public void ScrollearPagina( WebDriver robot) throws AWTException, InterruptedException, IOException {
+
+		wait = new WebDriverWait(robot, 500);
+		JavascriptExecutor js = ((JavascriptExecutor) robot);
+		js.executeScript("window.scrollTo(0, 0)");
+		Thread.sleep(3000);
+		
 	}
 
 }
