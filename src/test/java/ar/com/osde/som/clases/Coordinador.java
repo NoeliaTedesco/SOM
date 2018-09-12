@@ -66,6 +66,13 @@ public class Coordinador {
 	
 	@FindBy (xpath= ("//*[@id=\"enviarInvitacionForm\"]/div/footer/div/div/div/div[2]/button"))
 	private WebElement btnEnviar;
+	
+	@FindBy (css = "i.fa.fa-2x.fa-trash")
+	private WebElement btnAnular;
+	
+	
+	private WebElement registroInvitacion;
+
 
 	public Coordinador(WebDriver driver) {
 		this.robot = driver;
@@ -128,6 +135,22 @@ public class Coordinador {
 		new Select (campoEspecialidad).selectByVisibleText(Especialidad);
 		campoDetalle.sendKeys(Detalle);
 		btnEnviar.click();
+	}
+	
+	public void SeleccionarInvitacion(String emailInvitacion) {
+	 try {
+		 registroInvitacion = driver.findEliment(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='"+emailInvitacion+"'])[1]/following::td[3]"))
+				 registroInvitacion.click();
+	 }catch (Exception e) {
+		 System.out.println("El registro no se encuentra");
+	 }
+		
+	}
+	
+	public void anularInvitacion(String emailInvitacion) {
+		seleccionarInvitacion(emailInvitacion);
+		btnAnular.click();
+			
 	}
 
 }
