@@ -30,24 +30,21 @@ public class Test_Coordinador {
 	public void CoordinadorGeneraInvitacion(String nroSocio, String apellido, String nombre, String fechaNacimiento,
 			String NomSolicitante, String TipoMatricula, String NumMatricula, String email, String celular,
 			String Especialidad, String Detalle) throws InterruptedException, AWTException, IOException {
-		coordinador1.IngresargestionPractica();
+		coordinador1.IngresarGestionPractica();
 		coordinador1.AbrirEnviarInvitacion();
 		coordinador1.crearInvitacion(nroSocio, apellido, nombre, fechaNacimiento, NomSolicitante, TipoMatricula,
 				NumMatricula, email, celular, Especialidad, Detalle);
 		Thread.sleep(10000);
 		coordinador1.ScrollearPaginaSubir(coordinador1.getDriver());
-		coordinador1.reenviarInvitacion(email, coordinador1.getDriver());
+		coordinador1.reenviarInvitacion(email,coordinador1.getDriver());
 		coordinador1.anularInvitacion(email);
-		Thread.sleep(3000);
-		// inicial.cerrarPagina(inicial.getDriver());
-		// inicial.finalizarProcesoDriver();
 
 	}
 
-	@AfterClass
+	 @AfterClass
 	public void afterClass() {
 		coordinador1.cerrarPagina(coordinador1.getDriver());
 		coordinador1.finalizarProcesoDriver();
-	}
+	} 
 
 }

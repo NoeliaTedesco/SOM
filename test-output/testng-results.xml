@@ -1,13 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="45866" started-at="2018-09-14T15:10:07Z" finished-at="2018-09-14T15:10:53Z">
+  <suite name="Suite" duration-ms="62393" started-at="2018-09-14T18:58:32Z" finished-at="2018-09-14T18:59:34Z">
     <groups>
     </groups>
-    <test name="Coordinador" duration-ms="45866" started-at="2018-09-14T15:10:07Z" finished-at="2018-09-14T15:10:53Z">
+    <test name="Coordinador" duration-ms="62393" started-at="2018-09-14T18:58:32Z" finished-at="2018-09-14T18:59:34Z">
+      <class name="ar.com.osde.som.test.Test_Administrador">
+        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:ar.com.osde.som.test.Test_Administrador@36d4b5c]" name="startUp" is-config="true" duration-ms="8629" started-at="2018-09-14T15:58:53Z" finished-at="2018-09-14T15:59:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin@osdesegundaopinion.com.ar]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[OSOMTEST]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="PASS" signature="NavegarMenuAdministrador(java.lang.String)[pri:0, instance:ar.com.osde.som.test.Test_Administrador@36d4b5c]" name="NavegarMenuAdministrador" duration-ms="2277" started-at="2018-09-14T15:59:01Z" finished-at="2018-09-14T15:59:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Coordinadores]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NavegarMenuAdministrador -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:ar.com.osde.som.test.Test_Administrador@36d4b5c]" name="afterClass" is-config="true" duration-ms="982" started-at="2018-09-14T15:59:04Z" finished-at="2018-09-14T15:59:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- ar.com.osde.som.test.Test_Administrador -->
       <class name="ar.com.osde.som.test.Test_Coordinador">
-        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:ar.com.osde.som.test.Test_Coordinador@100fc185]" name="startUp" is-config="true" duration-ms="11174" started-at="2018-09-14T12:10:07Z" finished-at="2018-09-14T12:10:18Z">
+        <test-method status="PASS" signature="startUp(java.lang.String, java.lang.String)[pri:0, instance:ar.com.osde.som.test.Test_Coordinador@6d00a15d]" name="startUp" is-config="true" duration-ms="8489" started-at="2018-09-14T15:59:05Z" finished-at="2018-09-14T15:59:13Z">
           <params>
             <param index="0">
               <value>
@@ -23,7 +56,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="CoordinadorGeneraInvitacion(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ar.com.osde.som.test.Test_Coordinador@100fc185]" name="CoordinadorGeneraInvitacion" duration-ms="33488" started-at="2018-09-14T12:10:18Z" finished-at="2018-09-14T12:10:52Z">
+        <test-method status="PASS" signature="CoordinadorGeneraInvitacion(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ar.com.osde.som.test.Test_Coordinador@6d00a15d]" name="CoordinadorGeneraInvitacion" duration-ms="19720" started-at="2018-09-14T15:59:13Z" finished-at="2018-09-14T15:59:33Z">
           <params>
             <param index="0">
               <value>
@@ -84,11 +117,37 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CoordinadorGeneraInvitacion -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:ar.com.osde.som.test.Test_Coordinador@100fc185]" name="afterClass" is-config="true" duration-ms="1181" started-at="2018-09-14T12:10:52Z" finished-at="2018-09-14T12:10:53Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:ar.com.osde.som.test.Test_Coordinador@6d00a15d]" name="afterClass" is-config="true" duration-ms="1005" started-at="2018-09-14T15:59:33Z" finished-at="2018-09-14T15:59:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- ar.com.osde.som.test.Test_Coordinador -->
+      <class name="ar.com.osde.som.test.Test_Medico">
+        <test-method status="PASS" signature="starUp(java.lang.String, java.lang.String)[pri:0, instance:ar.com.osde.som.test.Test_Medico@2ef5e5e3]" name="starUp" is-config="true" duration-ms="7479" started-at="2018-09-14T15:58:32Z" finished-at="2018-09-14T15:58:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ntedesco@sms-latam.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SMOTEST1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- starUp -->
+        <test-method status="PASS" signature="atenderSocio()[pri:0, instance:ar.com.osde.som.test.Test_Medico@2ef5e5e3]" name="atenderSocio" duration-ms="12124" started-at="2018-09-14T15:58:39Z" finished-at="2018-09-14T15:58:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- atenderSocio -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:ar.com.osde.som.test.Test_Medico@2ef5e5e3]" name="afterClass" is-config="true" duration-ms="1659" started-at="2018-09-14T15:58:51Z" finished-at="2018-09-14T15:58:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- ar.com.osde.som.test.Test_Medico -->
     </test> <!-- Coordinador -->
   </suite> <!-- Suite -->
 </testng-results>

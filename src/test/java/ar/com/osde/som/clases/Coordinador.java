@@ -105,7 +105,7 @@ public class Coordinador extends Base{
 
 	}
 
-	public void IngresargestionPractica() {
+	public void IngresarGestionPractica() {
 		try {
 			if (menuGestionPractica.isDisplayed()) {
 				menuGestionPractica.click();

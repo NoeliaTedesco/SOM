@@ -1,35 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <parameter name="NomSolicitante" value="Tedesco Noelia"/>
+  <parameter name="usuarioMedico" value="ntedesco@sms-latam.com"/>
   <parameter name="usser" value="smotest1@smo.com"/>
   <parameter name="pass" value="SMOTEST1"/>
-  <parameter name="fechaNacimiento" value="11-03-1992"/>
-  <parameter name="Detalle" value="Pruebaa1"/>
-  <parameter name="nombre" value="Marta"/>
-  <parameter name="TipoMatricula" value="MP - Jujuy"/>
-  <parameter name="nroSocio" value="61271207809"/>
-  <parameter name="apellido" value="Sanchez"/>
-  <parameter name="celular" value="1130170508"/>
-  <parameter name="Especialidad" value="Clínica Adultos"/>
-  <parameter name="NumMatricula" value="AL20050010"/>
-  <parameter name="email" value="ntedesco@sms-latam.com"/>
+  <parameter name="contrasenaMedico" value="SMOTEST1"/>
+  <parameter name="usuarioAdministrador" value="admin@osdesegundaopinion.com.ar"/>
+  <parameter name="contrasenaAdministrador" value="OSOMTEST"/>
   <test name="Coordinador">
-    <parameter name="NomSolicitante" value="Tedesco Noelia"/>
+    <parameter name="usuarioMedico" value="ntedesco@sms-latam.com"/>
     <parameter name="usser" value="smotest1@smo.com"/>
     <parameter name="pass" value="SMOTEST1"/>
-    <parameter name="fechaNacimiento" value="11-03-1992"/>
-    <parameter name="Detalle" value="Pruebaa1"/>
-    <parameter name="nombre" value="Marta"/>
-    <parameter name="TipoMatricula" value="MP - Jujuy"/>
-    <parameter name="nroSocio" value="61271207809"/>
-    <parameter name="apellido" value="Sanchez"/>
-    <parameter name="celular" value="1130170508"/>
-    <parameter name="Especialidad" value="Clínica Adultos"/>
-    <parameter name="NumMatricula" value="AL20050010"/>
-    <parameter name="email" value="ntedesco@sms-latam.com"/>
+    <parameter name="contrasenaMedico" value="SMOTEST1"/>
+    <parameter name="usuarioAdministrador" value="admin@osdesegundaopinion.com.ar"/>
+    <parameter name="contrasenaAdministrador" value="OSOMTEST"/>
     <classes>
-      <class name="ar.com.osde.som.test.Test_Coordinador"/>
+      <class name="ar.com.osde.som.test.Test_Medico"/>
+      <class name="ar.com.osde.som.test.Test_Administrador">
+        <parameter name="opcionMenu" value="Coordinadores"/>
+      </class> <!-- ar.com.osde.som.test.Test_Administrador -->
+      <class name="ar.com.osde.som.test.Test_Coordinador">
+        <parameter name="TipoMatricula" value="MP - Jujuy"/>
+        <parameter name="NomSolicitante" value="Tedesco Noelia"/>
+        <parameter name="nroSocio" value="61271207809"/>
+        <parameter name="fechaNacimiento" value="11-03-1992"/>
+        <parameter name="Detalle" value="Pruebaa1"/>
+        <parameter name="apellido" value="Sanchez"/>
+        <parameter name="celular" value="1130170508"/>
+        <parameter name="Especialidad" value="Clínica Adultos"/>
+        <parameter name="NumMatricula" value="AL20050010"/>
+        <parameter name="nombre" value="Marta"/>
+        <parameter name="email" value="ntedesco@sms-latam.com"/>
+      </class> <!-- ar.com.osde.som.test.Test_Coordinador -->
     </classes>
   </test> <!-- Coordinador -->
 </suite> <!-- Failed suite [Suite] -->

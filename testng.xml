@@ -4,20 +4,35 @@
 	<test name="Coordinador">
 		<parameter name="usser" value="smotest1@smo.com"></parameter>
 		<parameter name="pass" value="SMOTEST1"></parameter>
-		<parameter name="nroSocio" value="61271207809"></parameter>
-		<parameter name="apellido" value="Sanchez"></parameter>
-		<parameter name="nombre" value="Marta"></parameter>
-		<parameter name="fechaNacimiento" value="11-03-1992"></parameter>
-		<parameter name="NomSolicitante" value="Tedesco Noelia"></parameter>
-		<parameter name="TipoMatricula" value="MP - Jujuy"></parameter>
-		<parameter name="NumMatricula" value="AL20050010"></parameter>
-		<parameter name="email" value="ntedesco@sms-latam.com"></parameter>
-		<parameter name="celular" value="1130170508"></parameter>
-		<parameter name="Especialidad" value="Clínica Adultos"></parameter>
-		<parameter name="Detalle" value="Pruebaa1"></parameter>
+		<parameter name="usuarioAdministrador" value="admin@osdesegundaopinion.com.ar"></parameter>
+		<parameter name="contrasenaAdministrador" value="OSOMTEST"></parameter>
+		<parameter name="usuarioMedico" value="ntedesco@sms-latam.com"></parameter>
+		<parameter name="contrasenaMedico" value="SMOTEST1"></parameter>
 		<classes>
-			<class name="ar.com.osde.som.test.Test_Coordinador">
+		
+			<class name="ar.com.osde.som.test.Test_Medico">
 			</class>
+
+			<class name="ar.com.osde.som.test.Test_Administrador">
+				<parameter name="opcionMenu" value="Coordinadores"></parameter>
+			</class>
+			<class name="ar.com.osde.som.test.Test_Coordinador">
+				<parameter name="nroSocio" value="61271207809"></parameter>
+				<parameter name="apellido" value="Sanchez"></parameter>
+				<parameter name="nombre" value="Marta"></parameter>
+				<parameter name="fechaNacimiento" value="11-03-1992"></parameter>
+				<parameter name="NomSolicitante" value="Tedesco Noelia"></parameter>
+				<parameter name="TipoMatricula" value="MP - Jujuy"></parameter>
+				<parameter name="NumMatricula" value="AL20050010"></parameter>
+				<parameter name="email" value="ntedesco@sms-latam.com"></parameter>
+				<parameter name="celular" value="1130170508"></parameter>
+				<parameter name="Especialidad" value="Clínica Adultos"></parameter>
+				<parameter name="Detalle" value="Pruebaa1"></parameter>
+
+			</class>
+
+
 		</classes>
+
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
