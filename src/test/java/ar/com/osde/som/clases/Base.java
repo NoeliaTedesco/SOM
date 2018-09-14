@@ -9,7 +9,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Base {
@@ -68,15 +67,5 @@ public class Base {
 		
 	}
 	
-	protected void cambiarFocoFrame() throws InterruptedException {
-		try {
-			//Se cambia al frame de menu de intranet
-			wait.until(ExpectedConditions.elementToBeClickable(popUp));
-			Thread.sleep(1000);			
-			driver.switchTo().frame(popUp);
-		} catch (Exception e) {
-			System.out.println("Ocurrió un errro al intentar cambiar de frame");
-		}
 
-	}
 }

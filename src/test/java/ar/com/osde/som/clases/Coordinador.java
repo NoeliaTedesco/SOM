@@ -175,7 +175,6 @@ public class Coordinador extends Base{
 	public void reenviarInvitacion(String emailInvitacion, WebDriver robot) throws InterruptedException {
 		if (seleccionarInvitacion(emailInvitacion)) {
 			btnReenviarInvitacion.click();
-			cambiarFocoFrame();
 			ScrollearPaginaBajar(robot);
 			Thread.sleep(3000);
 			btnConfirmar.click();
