@@ -6,18 +6,23 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Base {
 
 	public WebDriver driver;
 	static WebDriverWait wait;
-
+  
+	@FindBy (css = "div.modal-content")
+	public WebElement popUp; 
 
 	public Base() {
 		System.setProperty("webdriver.chrome.driver", "C:\\chromeDriver\\chromedriver.exe");
-		driver =  new ChromeDriver();
+		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
@@ -46,7 +51,7 @@ public class Base {
 	}
 	
 	
-	public void ScrollearPagina( WebDriver robot) throws AWTException, InterruptedException, IOException {
+	public void ScrollearPaginaSubir( WebDriver robot) throws AWTException, InterruptedException, IOException {
 
 		wait = new WebDriverWait(robot, 500);
 		JavascriptExecutor js = ((JavascriptExecutor) robot);
@@ -54,5 +59,24 @@ public class Base {
 		Thread.sleep(3000);
 		
 	}
+	
+	public void ScrollearPaginaBajar (WebDriver robot) throws InterruptedException {
+		wait = new WebDriverWait(robot, 500);
+		JavascriptExecutor js = ((JavascriptExecutor) robot);
+		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+		Thread.sleep(3000);
+		
+	}
+	
+	protected void cambiarFocoFrame() throws InterruptedException {
+		try {
+			//Se cambia al frame de menu de intranet
+			wait.until(ExpectedConditions.elementToBeClickable(popUp));
+			Thread.sleep(1000);			
+			driver.switchTo().frame(popUp);
+		} catch (Exception e) {
+			System.out.println("Ocurrió un errro al intentar cambiar de frame");
+		}
 
+	}
 }

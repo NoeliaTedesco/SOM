@@ -13,14 +13,13 @@ import ar.com.osde.som.clases.Coordinador;
 
 public class Test_Coordinador {
 
-	private Base inicial;
+
 	private Coordinador coordinador1;
 
 	@Parameters({ "usser", "pass" })
 	@BeforeClass
 	public void startUp(String usser, String pass) throws InterruptedException {
-		inicial = new Base();
-		coordinador1 = new Coordinador(inicial.getDriver());
+		coordinador1 = new Coordinador();
 		Thread.sleep(3000);
 		coordinador1.IniciarSesion(usser, pass);
 
@@ -37,7 +36,8 @@ public class Test_Coordinador {
 		coordinador1.crearInvitacion(nroSocio, apellido, nombre, fechaNacimiento, NomSolicitante, TipoMatricula,
 				NumMatricula, email, celular, Especialidad, Detalle);
 		Thread.sleep(10000);
-		inicial.ScrollearPagina(inicial.getDriver());
+		coordinador1.ScrollearPaginaSubir(coordinador1.getDriver());
+		coordinador1.reenviarInvitacion(email, coordinador1.getDriver());
 		coordinador1.anularInvitacion(email);
 		Thread.sleep(3000);
 		// inicial.cerrarPagina(inicial.getDriver());
@@ -47,8 +47,8 @@ public class Test_Coordinador {
 
 	@AfterClass
 	public void afterClass() {
-		inicial.cerrarPagina(inicial.getDriver());
-		inicial.finalizarProcesoDriver();
+		coordinador1.cerrarPagina(coordinador1.getDriver());
+		coordinador1.finalizarProcesoDriver();
 	}
 
 }
